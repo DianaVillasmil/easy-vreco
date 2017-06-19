@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>geolocation_easy-bike</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<section>
+		<div class="row">
+			<div class="col-md-3 col-sx-6">
+				<button id="encuentrame">
+					Encuentrame
+				</button>				
+			</div>
+			<div class="col-md-3 col-sx-6">
+				<p><strong>Origen</strong></p>
+				<input type="text" placeholder="Introduce una ubicación">				
+			</div>			
+			<div class="col-md-3 col-sx-6">
+				<button id="ruta">
+					Ruta
+				</button>				
+			</div>			
+			<div class="col-md-3 col-sx-6">
+				<p><strong>Destino</strong></p>
+				<input type="text" placeholder="Introduce una ubicación">					
+			</div>				
+		</div>		
+		<div class="row">
+			<div class="col-md-3 col-sx-6" id="map">
+				<!--Aqui ira nuestro mapa-->				
+			</div>			
+		</div>
+	</section>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9kqXFVQNKR9-xezQ-7EjgT5SjE0ARuAw&callback=initMap&libraries=places"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sh384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA712mCWNIpG9mG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  	<script src="assets/js/main.js"></script>
+</body>
+</html>
