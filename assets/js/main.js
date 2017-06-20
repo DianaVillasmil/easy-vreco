@@ -24,13 +24,11 @@ function initMap(){
 
     origenAutocomplete.addListener('place_changed', () => {
     	var ubicacion = origenAutocomplete.getPlace();
-    	var posicion = {
-    		coords: {
-    			latitude: ubicacion.geometry.location.lat(),
-    			longitude: ubicacion.geometry.location.lng()
-    		}
-    	}
-    	buscarExito(posicion, false);
+    	puntoA = new google.maps.LatLng(
+    		ubicacion.geometry.location.lat(),
+    		ubicacion.geometry.location.lng()
+    	);
+    	crearMarcadorOrigen(puntoA);
     });
 
     destinoAutocomplete.addListener('place_changed', () => {
@@ -41,9 +39,6 @@ function initMap(){
     	);
     	crearMarcadorDestino(puntoB);
     });
-
-    // origenAutocomplete.bindTo('bounds', map);
-    // destinoAutocomplete.bindTo('bounds', map);
 
     function limpiarMarcador(marcador) {
     	if (marcador) {
@@ -106,7 +101,7 @@ function initMap(){
 			directionsService.route({
 		        origin: puntoA,
 		        destination: puntoB,
-		        travelMode: google.maps.TravelMode.WALKING
+		        travelMode: google.maps.TravelMode.WALKING //DRIVING O BICYCLING
 		    }, function (response, status) {
 		        if (status == google.maps.DirectionsStatus.OK) {
 		            directionsDisplay.setDirections(response);
