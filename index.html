@@ -5,7 +5,9 @@
 	<title>geolocation_easy-bike</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -18,7 +20,7 @@
 			</div>
 			<div class="col-md-3 col-sx-6">
 				<p><strong>Origen</strong></p>
-				<input type="text" placeholder="Introduce una ubicación">				
+				<input type="text" placeholder="Introduce una ubicación" id="origen">				
 			</div>			
 			<div class="col-md-3 col-sx-6">
 				<button id="ruta">
@@ -27,7 +29,7 @@
 			</div>			
 			<div class="col-md-3 col-sx-6">
 				<p><strong>Destino</strong></p>
-				<input type="text" placeholder="Introduce una ubicación">					
+				<input type="text" placeholder="Introduce una ubicación" id="destino">					
 			</div>				
 		</div>		
 		<div class="row">
@@ -36,8 +38,15 @@
 			</div>			
 		</div>
 	</section>
+	<script src="assets/js/main.js"></script>
+
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9kqXFVQNKR9-xezQ-7EjgT5SjE0ARuAw&callback=initMap&libraries=places"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sh384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA712mCWNIpG9mG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  	<script src="assets/js/main.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  	crossorigin="anonymous"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  	
 </body>
 </html>
