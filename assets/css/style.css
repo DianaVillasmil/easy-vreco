@@ -13,8 +13,14 @@ html, body {
 	border: 2px solid black;
 }
 
+input {
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin-bottom: 10px;	
+}
+
 button {
-	margin: 15px auto;
+	margin: 10px auto;
 	padding: 10px 15px;
 	color: #142377;
 	background-color: #a3ccff;
@@ -38,8 +44,6 @@ p {
 	margin-bottom: 2px;	
 }
 
-input {
-	border-radius: 5px;
-	padding: 5px;
-	
+section {
+	text-align: center;
 }
